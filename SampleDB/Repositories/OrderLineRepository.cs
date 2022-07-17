@@ -16,7 +16,7 @@ namespace SampleDB.Repositories
             : base(context)
         { }
 
-        public async Task<OrderLine> Create(OrderLine entity, CancellationToken token = default)
+        public async Task<OrderLine> Add(OrderLine entity, CancellationToken token = default)
         {
             if (entity is null)
             {
@@ -40,6 +40,11 @@ namespace SampleDB.Repositories
             }
             Context.OrderLines.Add(entity);
             return entity;
+        }
+
+        public Task<OrderLine> Create()
+        {
+            return Task.FromResult(new OrderLine());
         }
 
         public async Task<bool> Delete(OrderLine entity, CancellationToken token = default)

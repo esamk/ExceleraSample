@@ -16,7 +16,7 @@ namespace SampleDB.Repositories
             :base(context)
         { }
 
-        public async Task<Order> Create(Order entity, CancellationToken token = default)
+        public async Task<Order> Add(Order entity, CancellationToken token = default)
         {
             if (entity is null)
             {
@@ -36,6 +36,11 @@ namespace SampleDB.Repositories
             }
             Context.Orders.Add(entity);
             return entity;
+        }
+
+        public Task<Order> Create()
+        {
+            return Task.FromResult(new Order());
         }
 
         public async Task<bool> Delete(Order entity, CancellationToken token = default)

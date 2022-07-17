@@ -11,7 +11,9 @@ namespace SampleDB.Interfaces
         where TKey : struct
         where TEntity : class
     {
-        Task<TEntity> Create(TEntity entity, CancellationToken token = default);
+        Task<TEntity> Create();
+
+        Task<TEntity> Add(TEntity entity, CancellationToken token = default);
 
         Task<TEntity> Update(TEntity entity, CancellationToken token = default);
 

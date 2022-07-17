@@ -17,7 +17,7 @@ namespace SampleDB.Repositories
             : base(context)
         {}
 
-        public async Task<Product> Create(Product entity, CancellationToken token = default)
+        public async Task<Product> Add(Product entity, CancellationToken token = default)
         {
             if (entity is null)
             {
@@ -37,6 +37,11 @@ namespace SampleDB.Repositories
             }
             Context.Products.Add(entity);
             return entity;
+        }
+
+        public Task<Product> Create()
+        {
+            return Task.FromResult(new Product());
         }
 
         public async Task<bool> Delete(Product entity, CancellationToken token = default)
