@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31004.235
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceleraSample", "ExceleraSample\ExceleraSample.csproj", "{A60DB2C3-C62B-46CA-A5E9-595CE065E758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDB", "SampleDB\SampleDB.csproj", "{A5962518-B44F-45A7-A753-D966F793D1C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A60DB2C3-C62B-46CA-A5E9-595CE065E758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60DB2C3-C62B-46CA-A5E9-595CE065E758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60DB2C3-C62B-46CA-A5E9-595CE065E758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60DB2C3-C62B-46CA-A5E9-595CE065E758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5962518-B44F-45A7-A753-D966F793D1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5962518-B44F-45A7-A753-D966F793D1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5962518-B44F-45A7-A753-D966F793D1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5962518-B44F-45A7-A753-D966F793D1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EA6A1CA-C5F0-4866-851D-1EF4BAF2120D}
+	EndGlobalSection
+EndGlobal
